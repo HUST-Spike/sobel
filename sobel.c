@@ -3,7 +3,11 @@
 #include <math.h>
 #include <time.h>
 #include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include "pgmio.h"
+
+#define OUTPUT_DIR "output"
 
 // Apply 3x3 mean blur filter to reduce noise
 // This is a bonus feature that improves edge detection quality
@@ -119,6 +123,13 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     
+    // Create output directory if not exists
+#ifdef _WIN32
+    mkdir(OUTPUT_DIR);
+#else
+    mkdir(OUTPUT_DIR, 0755);
+#endif
+    
     // Build filenames: prefer 'k' format for multiples of 1000
     char input_filename[256];
     char output_filename[256];
@@ -126,10 +137,10 @@ int main(int argc, char *argv[]) {
     if (size >= 1000 && size % 1000 == 0) {
         int k_value = size / 1000;
         snprintf(input_filename, sizeof(input_filename), "sample_%dk.pgm", k_value);
-        snprintf(output_filename, sizeof(output_filename), "sobel_%dk.pgm", k_value);
+        snprintf(output_filename, sizeof(output_filename), "%s/sobel_%dk.pgm", OUTPUT_DIR, k_value);
     } else {
         snprintf(input_filename, sizeof(input_filename), "sample_%d.pgm", size);
-        snprintf(output_filename, sizeof(output_filename), "sobel_%d.pgm", size);
+        snprintf(output_filename, sizeof(output_filename), "%s/sobel_%d.pgm", OUTPUT_DIR, size);
     }
     
     // Read input image

@@ -1,0 +1,239 @@
+==========================================
+MPI Test: Single_Node_1_Process
+Configuration: 1 node(s), 1 processes (1 per node)
+==========================================
+
+Hostfile content:
+hpc11 slots=1
+
+Testing 256x256 image
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+MPI processes: 1
+Rows per process: 256, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=256, with_ghost=256
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 262144 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 0.004373 seconds
+Writing output: output/sobel_mpi_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+MPI processes: 1
+Rows per process: 256, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=256, with_ghost=256
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 262144 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 0.005515 seconds
+Writing output: output/sobel_mpi_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+MPI processes: 1
+Rows per process: 256, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=256, with_ghost=256
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 262144 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 0.005303 seconds
+Writing output: output/sobel_mpi_256.pgm
+Output saved successfully
+
+
+Testing 1024x1024 image
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+MPI processes: 1
+Rows per process: 1024, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=1024, with_ghost=1024
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 4194304 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 0.071488 seconds
+Writing output: output/sobel_mpi_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+MPI processes: 1
+Rows per process: 1024, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=1024, with_ghost=1024
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 4194304 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 0.071762 seconds
+Writing output: output/sobel_mpi_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+MPI processes: 1
+Rows per process: 1024, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=1024, with_ghost=1024
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 4194304 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 0.077005 seconds
+Writing output: output/sobel_mpi_1024.pgm
+Output saved successfully
+
+
+Testing 4kx4k image
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+MPI processes: 1
+Rows per process: 4000, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=4000, with_ghost=4000
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 64000000 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 1.080294 seconds
+Writing output: output/sobel_mpi_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+MPI processes: 1
+Rows per process: 4000, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=4000, with_ghost=4000
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 64000000 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 1.096123 seconds
+Writing output: output/sobel_mpi_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+MPI processes: 1
+Rows per process: 4000, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=4000, with_ghost=4000
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 64000000 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 1.097278 seconds
+Writing output: output/sobel_mpi_4k.pgm
+Output saved successfully
+
+
+Testing 16kx16k image
+----------------------------
+Run 1:
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+MPI processes: 1
+Rows per process: 16384, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=16384, with_ghost=16384
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 1073741824 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 19.118077 seconds
+Writing output: output/sobel_mpi_16k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+MPI processes: 1
+Rows per process: 16384, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=16384, with_ghost=16384
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 1073741824 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 18.924386 seconds
+Writing output: output/sobel_mpi_16k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+MPI processes: 1
+Rows per process: 16384, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=16384, with_ghost=16384
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 1073741824 bytes to offset 0
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Processing completed in 17.625815 seconds
+Writing output: output/sobel_mpi_16k.pgm
+Output saved successfully
+
+
+==========================================
+Test completed: Single_Node_1_Process
+==========================================

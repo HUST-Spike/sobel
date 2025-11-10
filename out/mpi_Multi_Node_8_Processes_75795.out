@@ -1,0 +1,998 @@
+==========================================
+MPI Test: Multi_Node_8_Processes
+Configuration: 4 node(s), 8 processes (2 per node)
+==========================================
+
+Hostfile content:
+hpc11 slots=2
+hpc12 slots=2
+hpc13 slots=2
+hpc14 slots=2
+
+Testing 256x256 image
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+MPI processes: 8
+Rank 1: start_row=32, local_rows_actual=32, with_ghost=34
+Rank 1: Allocated buffers successfully
+Rank 1: Receiving data...
+Rank 1: Received data
+Rows per process: 32, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=32, with_ghost=33
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 32768 bytes to offset 0
+Root: Sending to rank 1: start_row=31, count=34 rows
+Root: Sending to rank 2: start_row=63, count=34 rows
+Root: Sending to rank 3: start_row=95, count=34 rows
+Root: Sending to rank 4: start_row=127, count=34 rows
+Root: Sending to rank 5: start_row=159, count=34 rows
+Rank 3: start_row=96, local_rows_actual=32, with_ghost=34
+Rank 3: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 3: Received data
+Rank 2: start_row=64, local_rows_actual=32, with_ghost=34
+Rank 2: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 2: Received data
+Root: Sending to rank 6: start_row=191, count=34 rows
+Root: Sending to rank 7: start_row=223, count=33 rows
+Rank 4: start_row=128, local_rows_actual=32, with_ghost=34
+Rank 4: Allocated buffers successfully
+Rank 4: Receiving data...
+Rank 4: Received data
+Rank 6: start_row=192, local_rows_actual=32, with_ghost=34
+Rank 6: Allocated buffers successfully
+Rank 6: Receiving data...
+Rank 5: start_row=160, local_rows_actual=32, with_ghost=34
+Rank 5: Allocated buffers successfully
+Rank 5: Receiving data...
+Rank 5: Received data
+Rank 7: start_row=224, local_rows_actual=32, with_ghost=33
+Rank 7: Allocated buffers successfully
+Rank 7: Receiving data...
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 6: Received data
+Rank 7: Received data
+Rank 4: Starting blur filter...
+Rank 1: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 7: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 3: Starting blur filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 2: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 1: Sobel complete
+Rank 4: Sobel complete
+Rank 0: Sobel complete
+Rank 5: Sobel complete
+Rank 7: Sobel complete
+Rank 3: Sobel complete
+Rank 6: Sobel complete
+Rank 2: Sobel complete
+Processing completed in 0.001655 seconds
+Writing output: output/sobel_mpi_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+MPI processes: 8
+Rank 1: start_row=32, local_rows_actual=32, with_ghost=34
+Rank 1: Allocated buffers successfully
+Rank 1: Receiving data...
+Rank 1: Received data
+Rows per process: 32, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=32, with_ghost=33
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 32768 bytes to offset 0
+Root: Sending to rank 1: start_row=31, count=34 rows
+Root: Sending to rank 2: start_row=63, count=34 rows
+Root: Sending to rank 3: start_row=95, count=34 rows
+Root: Sending to rank 4: start_row=127, count=34 rows
+Root: Sending to rank 5: start_row=159, count=34 rows
+Rank 6: start_row=192, local_rows_actual=32, with_ghost=34
+Rank 6: Allocated buffers successfully
+Rank 6: Receiving data...
+Rank 7: start_row=224, local_rows_actual=32, with_ghost=33
+Rank 7: Allocated buffers successfully
+Rank 7: Receiving data...
+Rank 3: start_row=96, local_rows_actual=32, with_ghost=34
+Rank 3: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 3: Received data
+Rank 2: start_row=64, local_rows_actual=32, with_ghost=34
+Rank 2: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 2: Received data
+Rank 5: start_row=160, local_rows_actual=32, with_ghost=34
+Rank 5: Allocated buffers successfully
+Rank 5: Receiving data...
+Rank 4: start_row=128, local_rows_actual=32, with_ghost=34
+Rank 4: Allocated buffers successfully
+Rank 4: Receiving data...
+Rank 4: Received data
+Root: Sending to rank 6: start_row=191, count=34 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=223, count=33 rows
+Rank 6: Received data
+Rank 1: Starting blur filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 1: Sobel complete
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Rank 4: Starting blur filter...
+Rank 7: Received data
+Rank 3: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 7: Starting blur filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 7: Sobel complete
+Rank 2: Starting blur filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 6: Starting blur filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 6: Sobel complete
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 3: Sobel complete
+Rank 4: Sobel complete
+Rank 5: Sobel complete
+Rank 2: Sobel complete
+Processing completed in 0.001479 seconds
+Writing output: output/sobel_mpi_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+MPI processes: 8
+Rank 1: start_row=32, local_rows_actual=32, with_ghost=34
+Rank 1: Allocated buffers successfully
+Rows per process: 32, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=32, with_ghost=33
+Rank 0: Allocated buffers successfully
+Rank 1: Receiving data...
+Rank 1: Received data
+Root: Distributing data...
+Root: Copying 32768 bytes to offset 0
+Root: Sending to rank 1: start_row=31, count=34 rows
+Root: Sending to rank 2: start_row=63, count=34 rows
+Root: Sending to rank 3: start_row=95, count=34 rows
+Root: Sending to rank 4: start_row=127, count=34 rows
+Root: Sending to rank 5: start_row=159, count=34 rows
+Rank 3: start_row=96, local_rows_actual=32, with_ghost=34
+Rank 3: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 3: Received data
+Rank 2: start_row=64, local_rows_actual=32, with_ghost=34
+Rank 2: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 2: Received data
+Root: Sending to rank 6: start_row=191, count=34 rows
+Root: Sending to rank 7: start_row=223, count=33 rows
+Rank 1: Starting blur filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 1: Sobel complete
+Root: Distribution complete
+Rank 0: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 0: Sobel complete
+Rank 4: start_row=128, local_rows_actual=32, with_ghost=34
+Rank 4: Allocated buffers successfully
+Rank 4: Receiving data...
+Rank 4: Received data
+Rank 6: start_row=192, local_rows_actual=32, with_ghost=34
+Rank 6: Allocated buffers successfully
+Rank 3: Starting blur filter...
+Rank 5: start_row=160, local_rows_actual=32, with_ghost=34
+Rank 5: Allocated buffers successfully
+Rank 5: Receiving data...
+Rank 5: Received data
+Rank 7: start_row=224, local_rows_actual=32, with_ghost=33
+Rank 7: Allocated buffers successfully
+Rank 7: Receiving data...
+Rank 2: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 6: Receiving data...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 6: Received data
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Processing completed in 0.002180 seconds
+Writing output: output/sobel_mpi_256.pgm
+Rank 3: Sobel complete
+Rank 5: Starting blur filter...
+Rank 7: Received data
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 6: Starting blur filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 6: Sobel complete
+Rank 2: Sobel complete
+Rank 4: Sobel complete
+Rank 7: Starting blur filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 7: Sobel complete
+Rank 5: Sobel complete
+Output saved successfully
+
+
+Testing 1024x1024 image
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+MPI processes: 8
+Rank 1: start_row=128, local_rows_actual=128, with_ghost=130
+Rank 1: Allocated buffers successfully
+Rank 1: Receiving data...
+Rank 1: Received data
+Rows per process: 128, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=128, with_ghost=129
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 524288 bytes to offset 0
+Root: Sending to rank 1: start_row=127, count=130 rows
+Root: Sending to rank 2: start_row=255, count=130 rows
+Root: Sending to rank 3: start_row=383, count=130 rows
+Root: Sending to rank 4: start_row=511, count=130 rows
+Rank 2: start_row=256, local_rows_actual=128, with_ghost=130
+Rank 2: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 2: Received data
+Rank 3: start_row=384, local_rows_actual=128, with_ghost=130
+Rank 3: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 3: Received data
+Rank 6: start_row=768, local_rows_actual=128, with_ghost=130
+Rank 6: Allocated buffers successfully
+Rank 6: Receiving data...
+Rank 7: start_row=896, local_rows_actual=128, with_ghost=129
+Rank 7: Allocated buffers successfully
+Rank 7: Receiving data...
+Rank 4: start_row=512, local_rows_actual=128, with_ghost=130
+Rank 4: Allocated buffers successfully
+Rank 4: Receiving data...
+Rank 5: start_row=640, local_rows_actual=128, with_ghost=130
+Rank 5: Allocated buffers successfully
+Rank 5: Receiving data...
+Root: Sending to rank 5: start_row=639, count=130 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=767, count=130 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=895, count=129 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 4: Starting blur filter...
+Rank 7: Received data
+Rank 0: Starting blur filter...
+Rank 1: Starting blur filter...
+Rank 7: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 1: Sobel complete
+Rank 0: Sobel complete
+Rank 2: Sobel complete
+Rank 4: Sobel complete
+Rank 5: Sobel complete
+Rank 7: Sobel complete
+Rank 3: Sobel complete
+Rank 6: Sobel complete
+Processing completed in 0.016239 seconds
+Writing output: output/sobel_mpi_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+MPI processes: 8
+Rank 1: start_row=128, local_rows_actual=128, with_ghost=130
+Rank 1: Allocated buffers successfully
+Rows per process: 128, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=128, with_ghost=129
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 524288 bytes to offset 0
+Root: Sending to rank 1: start_row=127, count=130 rows
+Rank 1: Receiving data...
+Root: Sending to rank 2: start_row=255, count=130 rows
+Rank 1: Received data
+Root: Sending to rank 3: start_row=383, count=130 rows
+Root: Sending to rank 4: start_row=511, count=130 rows
+Rank 2: start_row=256, local_rows_actual=128, with_ghost=130
+Rank 2: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 2: Received data
+Rank 3: start_row=384, local_rows_actual=128, with_ghost=130
+Rank 3: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 3: Received data
+Rank 4: start_row=512, local_rows_actual=128, with_ghost=130
+Rank 4: Allocated buffers successfully
+Rank 4: Receiving data...
+Rank 5: start_row=640, local_rows_actual=128, with_ghost=130
+Rank 5: Allocated buffers successfully
+Rank 5: Receiving data...
+Rank 7: start_row=896, local_rows_actual=128, with_ghost=129
+Rank 7: Allocated buffers successfully
+Rank 7: Receiving data...
+Rank 6: start_row=768, local_rows_actual=128, with_ghost=130
+Rank 6: Allocated buffers successfully
+Rank 6: Receiving data...
+Root: Sending to rank 5: start_row=639, count=130 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=767, count=130 rows
+Root: Sending to rank 7: start_row=895, count=129 rows
+Rank 5: Received data
+Rank 6: Received data
+Root: Distribution complete
+Rank 7: Received data
+Rank 0: Starting blur filter...
+Rank 1: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 7: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 1: Sobel complete
+Rank 4: Sobel complete
+Rank 3: Sobel complete
+Rank 2: Sobel complete
+Rank 7: Sobel complete
+Rank 0: Sobel complete
+Rank 5: Sobel complete
+Rank 6: Sobel complete
+Processing completed in 0.016206 seconds
+Writing output: output/sobel_mpi_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+MPI processes: 8
+Rank 1: start_row=128, local_rows_actual=128, with_ghost=130
+Rank 1: Allocated buffers successfully
+Rank 1: Receiving data...
+Rank 1: Received data
+Rows per process: 128, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=128, with_ghost=129
+Rank 0: Allocated buffers successfully
+Root: Distributing data...
+Root: Copying 524288 bytes to offset 0
+Root: Sending to rank 1: start_row=127, count=130 rows
+Root: Sending to rank 2: start_row=255, count=130 rows
+Root: Sending to rank 3: start_row=383, count=130 rows
+Root: Sending to rank 4: start_row=511, count=130 rows
+Rank 3: start_row=384, local_rows_actual=128, with_ghost=130
+Rank 3: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 3: Received data
+Rank 2: start_row=256, local_rows_actual=128, with_ghost=130
+Rank 2: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 2: Received data
+Rank 5: start_row=640, local_rows_actual=128, with_ghost=130
+Rank 5: Allocated buffers successfully
+Rank 4: start_row=512, local_rows_actual=128, with_ghost=130
+Rank 4: Allocated buffers successfully
+Rank 5: Receiving data...
+Rank 4: Receiving data...
+Rank 7: start_row=896, local_rows_actual=128, with_ghost=129
+Rank 7: Allocated buffers successfully
+Rank 7: Receiving data...
+Rank 6: start_row=768, local_rows_actual=128, with_ghost=130
+Rank 6: Allocated buffers successfully
+Rank 6: Receiving data...
+Root: Sending to rank 5: start_row=639, count=130 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=767, count=130 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=895, count=129 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 7: Received data
+Rank 1: Starting blur filter...
+Rank 7: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 0: Starting blur filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 3: Sobel complete
+Rank 1: Sobel complete
+Rank 2: Sobel complete
+Rank 5: Sobel complete
+Rank 4: Sobel complete
+Rank 0: Sobel complete
+Rank 7: Sobel complete
+Rank 6: Sobel complete
+Processing completed in 0.017682 seconds
+Writing output: output/sobel_mpi_1024.pgm
+Output saved successfully
+
+
+Testing 4kx4k image
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+MPI processes: 8
+Rank 1: start_row=500, local_rows_actual=500, with_ghost=502
+Rank 1: Allocated buffers successfully
+Rows per process: 500, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=500, with_ghost=501
+Rank 0: Allocated buffers successfully
+Rank 2: start_row=1000, local_rows_actual=500, with_ghost=502
+Rank 2: Allocated buffers successfully
+Rank 3: start_row=1500, local_rows_actual=500, with_ghost=502
+Rank 3: Allocated buffers successfully
+Rank 5: start_row=2500, local_rows_actual=500, with_ghost=502
+Rank 5: Allocated buffers successfully
+Rank 4: start_row=2000, local_rows_actual=500, with_ghost=502
+Rank 4: Allocated buffers successfully
+Rank 6: start_row=3000, local_rows_actual=500, with_ghost=502
+Rank 6: Allocated buffers successfully
+Rank 7: start_row=3500, local_rows_actual=500, with_ghost=501
+Rank 7: Allocated buffers successfully
+Rank 1: Receiving data...
+Root: Distributing data...
+Root: Copying 8000000 bytes to offset 0
+Rank 2: Receiving data...
+Rank 3: Receiving data...
+Root: Sending to rank 1: start_row=499, count=502 rows
+Rank 1: Received data
+Root: Sending to rank 2: start_row=999, count=502 rows
+Root: Sending to rank 3: start_row=1499, count=502 rows
+Rank 2: Received data
+Rank 7: Receiving data...
+Rank 6: Receiving data...
+Rank 5: Receiving data...
+Rank 4: Receiving data...
+Root: Sending to rank 4: start_row=1999, count=502 rows
+Rank 3: Received data
+Root: Sending to rank 5: start_row=2499, count=502 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=2999, count=502 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=3499, count=501 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 7: Received data
+Rank 7: Starting blur filter...
+Rank 1: Starting blur filter...
+Rank 0: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 2: Sobel complete
+Rank 3: Sobel complete
+Rank 5: Sobel complete
+Rank 4: Sobel complete
+Rank 1: Sobel complete
+Rank 6: Sobel complete
+Rank 0: Sobel complete
+Rank 7: Sobel complete
+Processing completed in 0.248324 seconds
+Writing output: output/sobel_mpi_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+MPI processes: 8
+Rank 1: start_row=500, local_rows_actual=500, with_ghost=502
+Rank 1: Allocated buffers successfully
+Rows per process: 500, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=500, with_ghost=501
+Rank 0: Allocated buffers successfully
+Rank 2: start_row=1000, local_rows_actual=500, with_ghost=502
+Rank 2: Allocated buffers successfully
+Rank 3: start_row=1500, local_rows_actual=500, with_ghost=502
+Rank 3: Allocated buffers successfully
+Rank 4: start_row=2000, local_rows_actual=500, with_ghost=502
+Rank 4: Allocated buffers successfully
+Rank 5: start_row=2500, local_rows_actual=500, with_ghost=502
+Rank 5: Allocated buffers successfully
+Rank 7: start_row=3500, local_rows_actual=500, with_ghost=501
+Rank 7: Allocated buffers successfully
+Rank 6: start_row=3000, local_rows_actual=500, with_ghost=502
+Rank 6: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 2: Receiving data...
+Rank 1: Receiving data...
+Root: Distributing data...
+Root: Copying 8000000 bytes to offset 0
+Root: Sending to rank 1: start_row=499, count=502 rows
+Rank 1: Received data
+Root: Sending to rank 2: start_row=999, count=502 rows
+Root: Sending to rank 3: start_row=1499, count=502 rows
+Rank 2: Received data
+Rank 4: Receiving data...
+Rank 6: Receiving data...
+Rank 5: Receiving data...
+Rank 7: Receiving data...
+Root: Sending to rank 4: start_row=1999, count=502 rows
+Rank 3: Received data
+Root: Sending to rank 5: start_row=2499, count=502 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=2999, count=502 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=3499, count=501 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 1: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 0: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 7: Received data
+Rank 7: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 2: Sobel complete
+Rank 1: Sobel complete
+Rank 0: Sobel complete
+Rank 7: Sobel complete
+Rank 6: Sobel complete
+Rank 3: Sobel complete
+Rank 4: Sobel complete
+Rank 5: Sobel complete
+Processing completed in 0.257848 seconds
+Writing output: output/sobel_mpi_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+MPI processes: 8
+Rank 1: start_row=500, local_rows_actual=500, with_ghost=502
+Rank 1: Allocated buffers successfully
+Rows per process: 500, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=500, with_ghost=501
+Rank 0: Allocated buffers successfully
+Rank 3: start_row=1500, local_rows_actual=500, with_ghost=502
+Rank 3: Allocated buffers successfully
+Rank 2: start_row=1000, local_rows_actual=500, with_ghost=502
+Rank 2: Allocated buffers successfully
+Rank 4: start_row=2000, local_rows_actual=500, with_ghost=502
+Rank 4: Allocated buffers successfully
+Rank 5: start_row=2500, local_rows_actual=500, with_ghost=502
+Rank 5: Allocated buffers successfully
+Rank 6: start_row=3000, local_rows_actual=500, with_ghost=502
+Rank 6: Allocated buffers successfully
+Rank 7: start_row=3500, local_rows_actual=500, with_ghost=501
+Rank 7: Allocated buffers successfully
+Rank 3: Receiving data...
+Rank 2: Receiving data...
+Rank 1: Receiving data...
+Root: Distributing data...
+Root: Copying 8000000 bytes to offset 0
+Root: Sending to rank 1: start_row=499, count=502 rows
+Rank 1: Received data
+Root: Sending to rank 2: start_row=999, count=502 rows
+Rank 5: Receiving data...
+Rank 4: Receiving data...
+Rank 7: Receiving data...
+Root: Sending to rank 3: start_row=1499, count=502 rows
+Rank 6: Receiving data...
+Rank 2: Received data
+Root: Sending to rank 4: start_row=1999, count=502 rows
+Rank 3: Received data
+Root: Sending to rank 5: start_row=2499, count=502 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=2999, count=502 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=3499, count=501 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 7: Received data
+Rank 7: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 1: Starting blur filter...
+Rank 0: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 3: Sobel complete
+Rank 2: Sobel complete
+Rank 7: Sobel complete
+Rank 5: Sobel complete
+Rank 6: Sobel complete
+Rank 1: Sobel complete
+Rank 0: Sobel complete
+Rank 4: Sobel complete
+Processing completed in 0.239316 seconds
+Writing output: output/sobel_mpi_4k.pgm
+Output saved successfully
+
+
+Testing 16kx16k image
+----------------------------
+Run 1:
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+MPI processes: 8
+Rank 1: start_row=2048, local_rows_actual=2048, with_ghost=2050
+Rank 1: Allocated buffers successfully
+Rows per process: 2048, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=2048, with_ghost=2049
+Rank 0: Allocated buffers successfully
+Rank 2: start_row=4096, local_rows_actual=2048, with_ghost=2050
+Rank 2: Allocated buffers successfully
+Rank 3: start_row=6144, local_rows_actual=2048, with_ghost=2050
+Rank 3: Allocated buffers successfully
+Rank 6: start_row=12288, local_rows_actual=2048, with_ghost=2050
+Rank 6: Allocated buffers successfully
+Rank 7: start_row=14336, local_rows_actual=2048, with_ghost=2049
+Rank 7: Allocated buffers successfully
+Rank 4: start_row=8192, local_rows_actual=2048, with_ghost=2050
+Rank 4: Allocated buffers successfully
+Rank 5: start_row=10240, local_rows_actual=2048, with_ghost=2050
+Rank 5: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 3: Receiving data...
+Root: Distributing data...
+Root: Copying 134217728 bytes to offset 0
+Rank 1: Receiving data...
+Rank 5: Receiving data...
+Rank 4: Receiving data...
+Rank 7: Receiving data...
+Rank 6: Receiving data...
+Root: Sending to rank 1: start_row=2047, count=2050 rows
+Rank 1: Received data
+Root: Sending to rank 2: start_row=4095, count=2050 rows
+Root: Sending to rank 3: start_row=6143, count=2050 rows
+Rank 2: Received data
+Root: Sending to rank 4: start_row=8191, count=2050 rows
+Rank 3: Received data
+Root: Sending to rank 5: start_row=10239, count=2050 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=12287, count=2050 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=14335, count=2049 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 7: Received data
+Rank 7: Starting blur filter...
+Rank 1: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 0: Starting blur filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 2: Sobel complete
+Rank 3: Sobel complete
+Rank 7: Sobel complete
+Rank 1: Sobel complete
+Rank 4: Sobel complete
+Rank 5: Sobel complete
+Rank 6: Sobel complete
+Rank 0: Sobel complete
+Processing completed in 4.086519 seconds
+Writing output: output/sobel_mpi_16k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+MPI processes: 8
+Rank 1: start_row=2048, local_rows_actual=2048, with_ghost=2050
+Rank 1: Allocated buffers successfully
+Rows per process: 2048, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=2048, with_ghost=2049
+Rank 0: Allocated buffers successfully
+Rank 2: start_row=4096, local_rows_actual=2048, with_ghost=2050
+Rank 2: Allocated buffers successfully
+Rank 3: start_row=6144, local_rows_actual=2048, with_ghost=2050
+Rank 3: Allocated buffers successfully
+Rank 4: start_row=8192, local_rows_actual=2048, with_ghost=2050
+Rank 4: Allocated buffers successfully
+Rank 5: start_row=10240, local_rows_actual=2048, with_ghost=2050
+Rank 5: Allocated buffers successfully
+Rank 6: start_row=12288, local_rows_actual=2048, with_ghost=2050
+Rank 6: Allocated buffers successfully
+Rank 7: start_row=14336, local_rows_actual=2048, with_ghost=2049
+Rank 7: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 3: Receiving data...
+Rank 1: Receiving data...
+Root: Distributing data...
+Root: Copying 134217728 bytes to offset 0
+Rank 7: Receiving data...
+Rank 6: Receiving data...
+Rank 4: Receiving data...
+Rank 5: Receiving data...
+Root: Sending to rank 1: start_row=2047, count=2050 rows
+Rank 1: Received data
+Root: Sending to rank 2: start_row=4095, count=2050 rows
+Root: Sending to rank 3: start_row=6143, count=2050 rows
+Rank 2: Received data
+Root: Sending to rank 4: start_row=8191, count=2050 rows
+Rank 3: Received data
+Root: Sending to rank 5: start_row=10239, count=2050 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=12287, count=2050 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=14335, count=2049 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 1: Starting blur filter...
+Rank 0: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 7: Received data
+Rank 7: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 2: Sobel complete
+Rank 1: Sobel complete
+Rank 3: Sobel complete
+Rank 7: Sobel complete
+Rank 4: Sobel complete
+Rank 6: Sobel complete
+Rank 5: Sobel complete
+Rank 0: Sobel complete
+Processing completed in 4.302907 seconds
+Writing output: output/sobel_mpi_16k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+MPI processes: 8
+Rank 1: start_row=2048, local_rows_actual=2048, with_ghost=2050
+Rank 1: Allocated buffers successfully
+Rows per process: 2048, Remainder: 0
+Rank 0: start_row=0, local_rows_actual=2048, with_ghost=2049
+Rank 0: Allocated buffers successfully
+Rank 2: start_row=4096, local_rows_actual=2048, with_ghost=2050
+Rank 2: Allocated buffers successfully
+Rank 3: start_row=6144, local_rows_actual=2048, with_ghost=2050
+Rank 3: Allocated buffers successfully
+Rank 4: start_row=8192, local_rows_actual=2048, with_ghost=2050
+Rank 4: Allocated buffers successfully
+Rank 5: start_row=10240, local_rows_actual=2048, with_ghost=2050
+Rank 5: Allocated buffers successfully
+Rank 6: start_row=12288, local_rows_actual=2048, with_ghost=2050
+Rank 6: Allocated buffers successfully
+Rank 7: start_row=14336, local_rows_actual=2048, with_ghost=2049
+Rank 7: Allocated buffers successfully
+Rank 2: Receiving data...
+Rank 3: Receiving data...
+Rank 1: Receiving data...
+Root: Distributing data...
+Root: Copying 134217728 bytes to offset 0
+Rank 4: Receiving data...
+Rank 5: Receiving data...
+Rank 7: Receiving data...
+Rank 6: Receiving data...
+Root: Sending to rank 1: start_row=2047, count=2050 rows
+Rank 1: Received data
+Root: Sending to rank 2: start_row=4095, count=2050 rows
+Root: Sending to rank 3: start_row=6143, count=2050 rows
+Rank 2: Received data
+Root: Sending to rank 4: start_row=8191, count=2050 rows
+Rank 3: Received data
+Root: Sending to rank 5: start_row=10239, count=2050 rows
+Rank 4: Received data
+Root: Sending to rank 6: start_row=12287, count=2050 rows
+Rank 5: Received data
+Root: Sending to rank 7: start_row=14335, count=2049 rows
+Rank 6: Received data
+Root: Distribution complete
+Rank 1: Starting blur filter...
+Rank 0: Starting blur filter...
+Rank 7: Received data
+Rank 7: Starting blur filter...
+Rank 6: Starting blur filter...
+Rank 4: Starting blur filter...
+Rank 5: Starting blur filter...
+Rank 2: Starting blur filter...
+Rank 3: Starting blur filter...
+Rank 2: Blur complete
+Rank 2: Starting Sobel filter...
+Rank 3: Blur complete
+Rank 3: Starting Sobel filter...
+Rank 4: Blur complete
+Rank 4: Starting Sobel filter...
+Rank 7: Blur complete
+Rank 7: Starting Sobel filter...
+Rank 1: Blur complete
+Rank 1: Starting Sobel filter...
+Rank 0: Blur complete
+Rank 0: Starting Sobel filter...
+Rank 6: Blur complete
+Rank 6: Starting Sobel filter...
+Rank 5: Blur complete
+Rank 5: Starting Sobel filter...
+Rank 3: Sobel complete
+Rank 1: Sobel complete
+Rank 4: Sobel complete
+Rank 7: Sobel complete
+Rank 2: Sobel complete
+Rank 6: Sobel complete
+Rank 0: Sobel complete
+Rank 5: Sobel complete
+Processing completed in 3.994632 seconds
+Writing output: output/sobel_mpi_16k.pgm
+Output saved successfully
+
+
+==========================================
+Test completed: Multi_Node_8_Processes
+==========================================

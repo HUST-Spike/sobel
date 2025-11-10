@@ -1,0 +1,175 @@
+==========================================
+MPI Single Node Tests
+==========================================
+
+==========================================
+Configuration: 1 node, 1 processes
+==========================================
+
+Hostfile content:
+hpc11 slots=1
+
+Testing 256x256 image
+----------------------------
+Run 1:
+Image: 256x256 | Nodes: 1 | Processes: 1 | Time: 0.005101 seconds
+
+Run 2:
+Image: 256x256 | Nodes: 1 | Processes: 1 | Time: 0.004047 seconds
+
+Run 3:
+Image: 256x256 | Nodes: 1 | Processes: 1 | Time: 0.004466 seconds
+
+
+Testing 1024x1024 image
+----------------------------
+Run 1:
+Image: 1024x1024 | Nodes: 1 | Processes: 1 | Time: 0.066412 seconds
+
+Run 2:
+Image: 1024x1024 | Nodes: 1 | Processes: 1 | Time: 0.066124 seconds
+
+Run 3:
+Image: 1024x1024 | Nodes: 1 | Processes: 1 | Time: 0.066044 seconds
+
+
+Testing 4kx4k image
+----------------------------
+Run 1:
+Image: 4000x4000 | Nodes: 1 | Processes: 1 | Time: 1.008253 seconds
+
+Run 2:
+Image: 4000x4000 | Nodes: 1 | Processes: 1 | Time: 1.007805 seconds
+
+Run 3:
+Image: 4000x4000 | Nodes: 1 | Processes: 1 | Time: 1.008168 seconds
+
+
+Testing 16kx16k image
+----------------------------
+Run 1:
+Image: 16384x16384 | Nodes: 1 | Processes: 1 | Time: 17.487029 seconds
+
+Run 2:
+Image: 16384x16384 | Nodes: 1 | Processes: 1 | Time: 17.643790 seconds
+
+Run 3:
+Image: 16384x16384 | Nodes: 1 | Processes: 1 | Time: 17.624232 seconds
+
+
+
+==========================================
+Configuration: 1 node, 2 processes
+==========================================
+
+Hostfile content:
+hpc11 slots=2
+
+Testing 256x256 image
+----------------------------
+Run 1:
+Image: 256x256 | Nodes: 1 | Processes: 2 | Time: 0.003155 seconds
+
+Run 2:
+Image: 256x256 | Nodes: 1 | Processes: 2 | Time: 0.002795 seconds
+
+Run 3:
+Image: 256x256 | Nodes: 1 | Processes: 2 | Time: 0.002552 seconds
+
+
+Testing 1024x1024 image
+----------------------------
+Run 1:
+Image: 1024x1024 | Nodes: 1 | Processes: 2 | Time: 0.033626 seconds
+
+Run 2:
+Image: 1024x1024 | Nodes: 1 | Processes: 2 | Time: 0.033110 seconds
+
+Run 3:
+Image: 1024x1024 | Nodes: 1 | Processes: 2 | Time: 0.033378 seconds
+
+
+Testing 4kx4k image
+----------------------------
+Run 1:
+Image: 4000x4000 | Nodes: 1 | Processes: 2 | Time: 0.497224 seconds
+
+Run 2:
+Image: 4000x4000 | Nodes: 1 | Processes: 2 | Time: 0.498101 seconds
+
+Run 3:
+Image: 4000x4000 | Nodes: 1 | Processes: 2 | Time: 0.497052 seconds
+
+
+Testing 16kx16k image
+----------------------------
+Run 1:
+Image: 16384x16384 | Nodes: 1 | Processes: 2 | Time: 9.033514 seconds
+
+Run 2:
+Image: 16384x16384 | Nodes: 1 | Processes: 2 | Time: 8.835566 seconds
+
+Run 3:
+Image: 16384x16384 | Nodes: 1 | Processes: 2 | Time: 9.390009 seconds
+
+
+
+==========================================
+Configuration: 1 node, 4 processes
+==========================================
+
+Hostfile content:
+hpc11 slots=4
+
+Testing 256x256 image
+----------------------------
+Run 1:
+Image: 256x256 | Nodes: 1 | Processes: 4 | Time: 0.001949 seconds
+
+Run 2:
+Image: 256x256 | Nodes: 1 | Processes: 4 | Time: 0.001892 seconds
+
+Run 3:
+Image: 256x256 | Nodes: 1 | Processes: 4 | Time: 0.001953 seconds
+
+
+Testing 1024x1024 image
+----------------------------
+Run 1:
+Image: 1024x1024 | Nodes: 1 | Processes: 4 | Time: 0.030299 seconds
+
+Run 2:
+Image: 1024x1024 | Nodes: 1 | Processes: 4 | Time: 0.028736 seconds
+
+Run 3:
+Image: 1024x1024 | Nodes: 1 | Processes: 4 | Time: 0.030541 seconds
+
+
+Testing 4kx4k image
+----------------------------
+Run 1:
+Image: 4000x4000 | Nodes: 1 | Processes: 4 | Time: 0.436668 seconds
+
+Run 2:
+Image: 4000x4000 | Nodes: 1 | Processes: 4 | Time: 0.473657 seconds
+
+Run 3:
+Image: 4000x4000 | Nodes: 1 | Processes: 4 | Time: 0.443560 seconds
+
+
+Testing 16kx16k image
+----------------------------
+Run 1:
+Image: 16384x16384 | Nodes: 1 | Processes: 4 | Time: 7.571452 seconds
+
+Run 2:
+Image: 16384x16384 | Nodes: 1 | Processes: 4 | Time: 7.584002 seconds
+
+Run 3:
+Image: 16384x16384 | Nodes: 1 | Processes: 4 | Time: 8.000058 seconds
+
+
+
+==========================================
+Single node tests completed!
+==========================================

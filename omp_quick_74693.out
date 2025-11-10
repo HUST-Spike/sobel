@@ -1,0 +1,68 @@
+Quick OpenMP Test (256 and 1024 only)
+======================================
+
+Testing 256x256
+----------------------
+Threads=1: 
+Processing completed in 0.004433 seconds
+Processing completed in 0.006372 seconds
+Processing completed in 0.004726 seconds
+
+Threads=2: 
+Processing completed in 0.007086 seconds
+Processing completed in 0.007141 seconds
+Processing completed in 0.007096 seconds
+
+Threads=4: 
+Processing completed in 0.003584 seconds
+Processing completed in 0.003617 seconds
+Processing completed in 0.003631 seconds
+
+Threads=8: 
+Processing completed in 0.001857 seconds
+Processing completed in 0.001872 seconds
+Processing completed in 0.001865 seconds
+
+Threads=16: 
+Processing completed in 0.001005 seconds
+Processing completed in 0.001050 seconds
+Processing completed in 0.000983 seconds
+
+Threads=32: 
+Processing completed in 0.000963 seconds
+Processing completed in 0.001015 seconds
+Processing completed in 0.001095 seconds
+
+Testing 1024x1024
+----------------------
+Threads=1: 
+Processing completed in 0.072956 seconds
+Processing completed in 0.073857 seconds
+Processing completed in 0.074017 seconds
+
+Threads=2: 
+Processing completed in 0.045411 seconds
+Processing completed in 0.045947 seconds
+Processing completed in 0.045762 seconds
+
+Threads=4: 
+Processing completed in 0.028092 seconds
+Processing completed in 0.028562 seconds
+Processing completed in 0.027336 seconds
+
+Threads=8: 
+Processing completed in 0.017428 seconds
+Processing completed in 0.019045 seconds
+Processing completed in 0.018834 seconds
+
+Threads=16: 
+Processing completed in 0.012365 seconds
+Processing completed in 0.011402 seconds
+Processing completed in 0.012965 seconds
+
+Threads=32: 
+Processing completed in 0.010618 seconds
+Processing completed in 0.013540 seconds
+Processing completed in 0.011133 seconds
+
+Quick test completed!

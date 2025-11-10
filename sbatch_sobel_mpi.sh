@@ -21,10 +21,8 @@ EXECUTABLE="./sobel_mpi"
 cat <<EOF > "sobel_mpi.job"
 #!/bin/bash
 #SBATCH --job-name=${JOB_NAME}
-#SBATCH --output=/uac/lec/ktlam/cmsc5702/demos/${OUTPUT_FILE}
-#SBATCH --mail-user=1155238361@link.cuhk.edu.hk
-#SBATCH --mail-type=ALL
-#SBATCH --time=00:10:00           # Wall-clock time limit (e.g., 10 minutes)
+#SBATCH --output=${OUTPUT_FILE}
+#SBATCH --time=00:10:00
 
 #SBATCH --nodes=${NUM_NODES}
 #SBATCH --ntasks=${TOTAL_TASKS}

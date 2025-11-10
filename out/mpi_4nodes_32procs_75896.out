@@ -1,0 +1,62 @@
+==========================================
+MPI Multi-Node Test: 32 processes
+Configuration: 4 nodes, 8 processes per node
+==========================================
+
+Hostfile content:
+hpc11 slots=8
+hpc12 slots=8
+hpc13 slots=8
+hpc14 slots=8
+
+Testing 256x256 image
+----------------------------
+Run 1:
+Image: 256x256 | Nodes: 4 | Processes: 32 | Time: 0.000313 seconds
+
+Run 2:
+Image: 256x256 | Nodes: 4 | Processes: 32 | Time: 0.000442 seconds
+
+Run 3:
+Image: 256x256 | Nodes: 4 | Processes: 32 | Time: 0.000948 seconds
+
+
+Testing 1024x1024 image
+----------------------------
+Run 1:
+Image: 1024x1024 | Nodes: 4 | Processes: 32 | Time: 0.004342 seconds
+
+Run 2:
+Image: 1024x1024 | Nodes: 4 | Processes: 32 | Time: 0.004108 seconds
+
+Run 3:
+Image: 1024x1024 | Nodes: 4 | Processes: 32 | Time: 0.004396 seconds
+
+
+Testing 4kx4k image
+----------------------------
+Run 1:
+Image: 4000x4000 | Nodes: 4 | Processes: 32 | Time: 0.062592 seconds
+
+Run 2:
+Image: 4000x4000 | Nodes: 4 | Processes: 32 | Time: 0.062791 seconds
+
+Run 3:
+Image: 4000x4000 | Nodes: 4 | Processes: 32 | Time: 0.064477 seconds
+
+
+Testing 16kx16k image
+----------------------------
+Run 1:
+Image: 16384x16384 | Nodes: 4 | Processes: 32 | Time: 1.060443 seconds
+
+Run 2:
+Image: 16384x16384 | Nodes: 4 | Processes: 32 | Time: 1.064325 seconds
+
+Run 3:
+Image: 16384x16384 | Nodes: 4 | Processes: 32 | Time: 1.065586 seconds
+
+
+==========================================
+32-process test completed!
+==========================================

@@ -1,0 +1,693 @@
+==========================================
+OpenMP Sobel Filter Performance Test
+==========================================
+
+==========================================
+Testing 256x256 image
+==========================================
+
+Thread count: 1
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 1
+Processing completed in 0.004742 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 1
+Processing completed in 0.005598 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 1
+Processing completed in 0.004868 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+
+Thread count: 2
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 2
+Processing completed in 0.007125 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 2
+Processing completed in 0.007162 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 2
+Processing completed in 0.007124 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+
+Thread count: 4
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 4
+Processing completed in 0.003671 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 4
+Processing completed in 0.003620 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 4
+Processing completed in 0.003662 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+
+Thread count: 8
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 8
+Processing completed in 0.001899 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 8
+Processing completed in 0.001890 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 8
+Processing completed in 0.001885 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+
+Thread count: 16
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 16
+Processing completed in 0.001041 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 16
+Processing completed in 0.001033 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 16
+Processing completed in 0.001009 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+
+Thread count: 32
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 32
+Processing completed in 0.001011 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 32
+Processing completed in 0.000937 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+OpenMP threads: 32
+Processing completed in 0.001132 seconds
+Writing output: output/sobel_omp_256.pgm
+Output saved successfully
+
+
+
+==========================================
+Testing 1024x1024 image
+==========================================
+
+Thread count: 1
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 1
+Processing completed in 0.073394 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 1
+Processing completed in 0.073776 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 1
+Processing completed in 0.074409 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+
+Thread count: 2
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 2
+Processing completed in 0.045436 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 2
+Processing completed in 0.046479 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 2
+Processing completed in 0.045746 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+
+Thread count: 4
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 4
+Processing completed in 0.030848 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 4
+Processing completed in 0.027704 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 4
+Processing completed in 0.027695 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+
+Thread count: 8
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 8
+Processing completed in 0.018357 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 8
+Processing completed in 0.019045 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 8
+Processing completed in 0.019138 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+
+Thread count: 16
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 16
+Processing completed in 0.012261 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 16
+Processing completed in 0.012260 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 16
+Processing completed in 0.011768 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+
+Thread count: 32
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 32
+Processing completed in 0.010639 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 32
+Processing completed in 0.011459 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+OpenMP threads: 32
+Processing completed in 0.010737 seconds
+Writing output: output/sobel_omp_1024.pgm
+Output saved successfully
+
+
+
+==========================================
+Testing 4kx4k image
+==========================================
+
+Thread count: 1
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 1
+Processing completed in 1.094043 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 1
+Processing completed in 1.095239 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 1
+Processing completed in 1.093021 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+
+Thread count: 2
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 2
+Processing completed in 0.569158 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 2
+Processing completed in 0.571297 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 2
+Processing completed in 0.573007 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+
+Thread count: 4
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 4
+Processing completed in 0.298862 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 4
+Processing completed in 0.300675 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 4
+Processing completed in 0.297942 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+
+Thread count: 8
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 8
+Processing completed in 0.157324 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 8
+Processing completed in 0.158583 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 8
+Processing completed in 0.161479 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+
+Thread count: 16
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 16
+Processing completed in 0.082829 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 16
+Processing completed in 0.083112 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 16
+Processing completed in 0.083682 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+
+Thread count: 32
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 32
+Processing completed in 0.076197 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 32
+Processing completed in 0.079009 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+OpenMP threads: 32
+Processing completed in 0.084017 seconds
+Writing output: output/sobel_omp_4k.pgm
+Output saved successfully
+
+
+
+==========================================
+Testing 16kx16k image
+==========================================
+
+Thread count: 1
+----------------------------
+Run 1:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 1
+Processing completed in 18.821223 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 2:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 1
+Processing completed in 18.834489 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 3:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 1
+Processing completed in 18.683824 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+
+Thread count: 2
+----------------------------
+Run 1:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 2
+Processing completed in 9.601452 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 2:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 2
+Processing completed in 9.490942 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 3:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 2
+Processing completed in 9.463919 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+
+Thread count: 4
+----------------------------
+Run 1:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 4
+Processing completed in 4.937583 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 2:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 4
+Processing completed in 5.007449 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 3:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 4
+Processing completed in 5.128998 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+
+Thread count: 8
+----------------------------
+Run 1:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 8
+Processing completed in 2.548476 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 2:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 8
+Processing completed in 2.546329 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 3:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 8
+Processing completed in 2.548408 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+
+Thread count: 16
+----------------------------
+Run 1:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 16
+Processing completed in 1.324684 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 2:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 16
+Processing completed in 1.284376 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 3:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 16
+Processing completed in 1.292626 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+
+Thread count: 32
+----------------------------
+Run 1:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 32
+Processing completed in 1.227381 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 2:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 32
+Processing completed in 1.281601 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+Run 3:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+OpenMP threads: 32
+Processing completed in 1.192323 seconds
+Writing output: output/sobel_omp_16k.pgm
+Output saved successfully
+
+
+
+==========================================
+All OpenMP tests completed!
+==========================================

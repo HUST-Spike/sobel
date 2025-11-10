@@ -1,0 +1,129 @@
+==========================================
+Sequential Sobel Filter Performance Test
+==========================================
+
+Testing 256x256 image:
+----------------------------
+Run 1:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 0.004316 seconds
+Writing output: output/sobel_256.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 0.005268 seconds
+Writing output: output/sobel_256.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_256.pgm
+Image loaded: 256x256
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 0.004518 seconds
+Writing output: output/sobel_256.pgm
+Output saved successfully
+
+
+Testing 1024x1024 image:
+----------------------------
+Run 1:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 0.069932 seconds
+Writing output: output/sobel_1024.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 0.069235 seconds
+Writing output: output/sobel_1024.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_1024.pgm
+Image loaded: 1024x1024
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 0.070627 seconds
+Writing output: output/sobel_1024.pgm
+Output saved successfully
+
+
+Testing 4kx4k image:
+----------------------------
+Run 1:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 1.043042 seconds
+Writing output: output/sobel_4k.pgm
+Output saved successfully
+
+Run 2:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 1.051668 seconds
+Writing output: output/sobel_4k.pgm
+Output saved successfully
+
+Run 3:
+Reading image: sample_4k.pgm
+Image loaded: 4000x4000
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 1.044982 seconds
+Writing output: output/sobel_4k.pgm
+Output saved successfully
+
+
+Testing 16kx16k image:
+----------------------------
+Run 1:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 17.873339 seconds
+Writing output: output/sobel_16k.pgm
+Output saved successfully
+
+Run 2:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 17.922349 seconds
+Writing output: output/sobel_16k.pgm
+Output saved successfully
+
+Run 3:
+Warning: Image size is 16384x16384, expected 16000x16000
+Reading image: sample_16k.pgm
+Image loaded: 16384x16384
+Applying 3x3 mean blur filter...
+Applying Sobel edge detection...
+Processing completed in 17.919953 seconds
+Writing output: output/sobel_16k.pgm
+Output saved successfully
+
+
+All tests completed!
+Results saved in output/
